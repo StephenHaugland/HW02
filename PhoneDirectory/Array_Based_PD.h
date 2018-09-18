@@ -55,6 +55,9 @@ public:
 private:
 	class Directory_Entry  // Brandon Clark worked on this class
 	{
+	private:
+		std::string name;
+		std::string number;
 	public:
 		Directory_Entry() {
 			name = "";
@@ -74,9 +77,6 @@ private:
 		void set_number(const std::string& new_number) {
 			number = new_number;
 		}
-	private:
-		string name;
-		string number;
 	};
 
 
